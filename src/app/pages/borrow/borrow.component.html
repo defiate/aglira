@@ -1,5 +1,5 @@
 <h3>Borrow</h3>
-<div class="card card-body">
+<div *ngIf="authorized" class="card card-body">
     <table>
         <thead>
             <tr>
@@ -16,7 +16,7 @@
                 <td class="py-2 ps-2 pe-5"><img src="assets/img/lusd.png" width="25rem" height="25rem"
                         style="border-radius: 50%;" class="p-1">LUSD</td>
                 <td class="py-2 ps-2 pe-5"><img src="assets/img/ageur_large.png" width="30rem" height="30rem"
-                        class="p-1">agEUR</td>
+                        class="p-1">pTRY</td>
                 <td class="py-2 ps-2 pe-5">0.5%</td>
                 <td class="py-2 ps-2 pe-5">2%</td>
                 <td class="py-2 ps-2 pe-5">88%</td>

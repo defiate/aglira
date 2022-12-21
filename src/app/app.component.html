@@ -1,6 +1,6 @@
 <header></header>
 <div *ngIf="signer" class="sideMenu text-center pt-4">
-  <img width="148" height="60" class="img-fluid" src="assets/img/logo_side_white.png" alt="">
+  <img width="148" height="60" class="img-fluid" src="assets/img/encode.png" alt="">
   <div class="px-3 pt-4">
     <ul class="list-unstyled text-white">
       <li *ngFor="let item of menuItems" class="mb-2 text-start">
@@ -21,6 +21,7 @@
         (click)="connectWallet()"
         type="button"
         class="btn btn-danger btn-lg px-4 gap-3"
+        
       >
         Connect Wallet
       </button>

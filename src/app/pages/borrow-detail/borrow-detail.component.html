@@ -1,5 +1,5 @@
 <h3>Borrow</h3>
-<div class="card card-body col-6 mb-3">
+<div *ngIf="authorized" class="card card-body col-6 mb-3">
     <div class="d-flex align-items-center justify-content-between py-1">
         <div>Add Collateral</div>
         <div>Balance: 0</div>
@@ -22,7 +22,7 @@
         <div class="fs-5">0.0</div>
         <div>
             <button type="button" class="btn btn-outline-dark"><img src="assets/img/ageur_large.png" width="30rem"
-                    height="30rem" class="p-1">agEUR</button>
+                    height="30rem" class="p-1">pTRY</button>
         </div>
     </div>
 </div>

@@ -26,7 +26,9 @@ export class AppComponent {
 
   menuItems = [
     { title: 'Home', route: '' },
-    { title: 'Borrow', route: '/borrow' }
+    { title: 'Borrow', route: '/borrow' },
+    { title: 'Collateral', route: '/collateral' },
+    { title: 'OnRamp/OffRamp', route: '/onrampofframp' },
   ]
 
   async connectWallet() {
@@ -42,7 +44,6 @@ export class AppComponent {
       lendingPoolJson.abi,
       this.signer
     );
-
     // get info after wallet is connected:
 
     // this.updateInfo();

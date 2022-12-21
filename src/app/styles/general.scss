@@ -1,0 +1,118 @@
+@import "./colors.scss";
+@import "./variables.scss";
+
+.card {
+    --bs-card-border-radius: 1rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(45deg, $materialGrey200 0, $materialGrey300 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+table {
+    font-size: 0.9rem;
+}
+
+.sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: $sideMenuWidth;
+    height: 100%;
+    background: linear-gradient(45deg, $materialGrey600 0, $materialGrey800 100%);
+    border-top-right-radius: 2rem;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    height: $headerHeight;
+    box-shadow: 0 2px 2px rgba(135, 135, 135, 0.251);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+}
+
+.mainContainer {
+    margin-left: $sideMenuWidth;
+    margin-top: $headerHeight;
+    padding: 1.25rem;
+}
+
+.btn-link {
+    transition: 200ms;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.pagination {
+    --bs-pagination-active-bg: #{$materialGrey800};
+    --bs-pagination-active-border-color: #{$materialGrey800};
+    --bs-pagination-hover-color: #{$materialGrey700};
+}
+
+.page-link {
+
+    color: $materialGrey600;
+}
+
+.page-link {
+    cursor: pointer;
+    color: #{$materialGrey600};
+}
+
+.page-link:focus {
+    color: #{$materialGrey600};
+    box-shadow: unset;
+}
+
+.customTablePagination {
+    font-size: 0.9rem;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-25 {
+    width: 20%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.customSelect{
+    max-width: 100%;
+    width: 120px;
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+}

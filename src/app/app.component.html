@@ -1,0 +1,16 @@
+<header></header>
+<div class="sideMenu text-center pt-4">
+  <img width="148" height="60" class="img-fluid" src="assets/img/logo_side_white.png" alt="">
+  <div class="px-3 pt-4">
+    <ul class="list-unstyled text-white">
+      <li *ngFor="let item of menuItems" class="mb-2 text-start">
+
+        <a class="text-dark btn btn-light w-100" routerLink="{{item.route}}">{{item.title}}</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+<div class="mainContainer">
+  <router-outlet></router-outlet>
+</div>

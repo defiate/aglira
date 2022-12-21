@@ -1,0 +1,7 @@
+{
+    "css.styleSheets": [
+        "/src/assets/css/bootstrap.min.css",
+        "/src/app/styles/general.scss"
+
+    ],
+}

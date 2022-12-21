@@ -12,7 +12,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr *ngFor="let item of items">
                 <td class="py-2 ps-2 pe-5"><img src="assets/img/lusd.png" width="25rem" height="25rem"
                         style="border-radius: 50%;" class="p-1">LUSD</td>
                 <td class="py-2 ps-2 pe-5"><img src="assets/img/ageur_large.png" width="30rem" height="30rem"
@@ -20,27 +20,7 @@
                 <td class="py-2 ps-2 pe-5">0.5%</td>
                 <td class="py-2 ps-2 pe-5">2%</td>
                 <td class="py-2 ps-2 pe-5">88%</td>
-                <td class="py-2 ps-2 pe-5"><button type="button" class="btn btn-warning">Borrow</button></td>
-            </tr>
-            <tr>
-                <td class="py-2 ps-2 pe-5"><img src="assets/img/lusd.png" width="25rem" height="25rem"
-                        style="border-radius: 50%;" class="p-1">LUSD</td>
-                <td class="py-2 ps-2 pe-5"><img src="assets/img/ageur_large.png" width="30rem" height="30rem"
-                        class="p-1">agEUR</td>
-                <td class="py-2 ps-2 pe-5">0.5%</td>
-                <td class="py-2 ps-2 pe-5">2%</td>
-                <td class="py-2 ps-2 pe-5">88%</td>
-                <td class="py-2 ps-2 pe-5"><button type="button" class="btn btn-warning">Borrow</button></td>
-            </tr>
-            <tr>
-                <td class="py-2 ps-2 pe-5"><img src="assets/img/lusd.png" width="25rem" height="25rem"
-                        style="border-radius: 50%;" class="p-1">LUSD</td>
-                <td class="py-2 ps-2 pe-5"><img src="assets/img/ageur_large.png" width="30rem" height="30rem"
-                        class="p-1">agEUR</td>
-                <td class="py-2 ps-2 pe-5">0.5%</td>
-                <td class="py-2 ps-2 pe-5">2%</td>
-                <td class="py-2 ps-2 pe-5">88%</td>
-                <td class="py-2 ps-2 pe-5"><button type="button" class="btn btn-warning">Borrow</button></td>
+                <td class="py-2 ps-2 pe-5"><a routerLink="/borrow-detail" type="button" class="btn btn-warning">Borrow</a></td>
             </tr>
         </tbody>
     </table>

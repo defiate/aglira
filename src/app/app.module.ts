@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BorrowComponent } from './pages/borrow/borrow.component';
+import { BorrowDetailComponent } from './pages/borrow-detail/borrow-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BorrowComponent
+    BorrowComponent,
+    BorrowDetailComponent
   ],
   imports: [
     BrowserModule,

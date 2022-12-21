@@ -7,6 +7,9 @@ import { Utils } from 'src/app/core/utils/utils';
   styleUrls: ['./borrow.component.scss']
 })
 export class BorrowComponent implements OnInit {
+
+  items = [1, 2, 3]
+
   ngOnInit(): void {
     Utils.loaders.hideFullLoader();
   }
